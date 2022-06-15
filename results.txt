@@ -1,0 +1,599 @@
+// First Program
+
+#include<stdio.h>
+void main()
+{
+    printf("Hello world");
+}
+// Program to add two numbers
+
+#include<stdio.h>
+void main()
+
+{
+    int a, b, sum;
+
+    printf("Enter the first number : ");
+    scanf("%d", &a);
+    printf("Enter the second number : ");
+    scanf("%d", &b);
+    sum= a+b;
+    printf("The sum of the two numbers : %d", sum);
+}
+// Program to find Area and Circumference of circle
+
+#include<stdio.h>
+#define PI 3.14
+void main()
+{
+    float r, C, A;
+    printf("Enter the radius of the circle : ");
+    scanf("%f", &r);
+    C= 2*PI*r;
+    A= PI*r*r;
+    printf("The circumference of the cirlce : %f ", C);
+    printf("\nThe area of the cirlce : %f ", A);
+}
+// Program to find multiple area of circle using multiple radius
+
+#include<stdio.h>
+#define PI 3.14
+void main()
+{
+    float r1, r2, r3;
+    float a1, a2, a3;
+    printf("Enter first radius : ");
+    scanf("%f", &r1);
+    printf("Enter second radius : ");
+    scanf("%f", &r2);
+    printf("Enter third radius : ");
+    scanf("%f", &r3);
+    a1= PI*r1*r1;
+    a2= PI*r2*r2;
+    a3= PI*r3*r3;
+    printf("\nThe area of circle with radius %f = %f", r1, a1);
+    printf("\nThe area of circle with radius %f = %f", r2, a2);
+    printf("\nThe area of circle with radius %f = %f", r3, a3);
+
+}
+// Program to find Perimeter and Area of Rectangle
+
+#include<stdio.h>
+void main ()
+{
+    float l, b, P, A;
+    printf("Enter the length of the rectangle : ");
+    scanf("%f", &l);
+    printf("Enter the breadth of the rectangle : ");
+    scanf("%f", &b);
+    P= 2*(l+b);
+    A= l*b;
+    printf("\n Perimeter = %f \n Area = %f", P, A);
+
+
+}
+// Program to find Simple Interest Compound interest Simple Amount Compound Amount
+
+#include<stdio.h>
+#include<math.h>
+void main()
+{
+    float P, T, R, I, A, CI, CA;
+    printf("Enter the Principal in RS : ");
+    scanf("%f", &P);
+    printf("Enter the time period in year : ");
+    scanf("%f", &T);
+    printf("Enter the rate of the interest per annum : ");
+    scanf("%f", &R);
+    I = (P*T*R)/100;
+    A = P+I;
+    CI = P*(pow(1+R/100,T)-1);
+    CA = P + CI;
+    printf("\n SI : %f \n Amount : %f \n CI : %f \n Compound Amount : %f", I, A, CI, CA);
+
+
+}
+// Program to test whether the number is positive or negative
+
+#include<stdio.h>
+void main()
+{
+    float num;
+    printf("Enter any number : ");
+    scanf("%f", &num);
+    if(num>0){
+        printf("\n %f is a positive number ", num);
+    }
+    else if (num<0){
+        printf("\n %f is a negative number ", num);
+    }
+}
+// Program to find remainder
+
+#include<stdio.h>
+void main()
+{
+    int a, b, Remainder, Quotient;
+    printf("Enter the Dividend : ");
+    scanf("%d", &a);
+    printf("Enter the Divisor : ");
+    scanf("%d", &b);
+    Remainder = a%b;
+    Quotient = a/b;
+    printf("\n Remainder = %d \n Quotient = %d", Remainder, Quotient);
+    printf("\n\n\t Special cases");
+    printf("\n REMAINDER = %d", 20%3);
+    printf("\n REMAINDER = %d", -20%3);
+    printf("\n REMAINDER = %d", 20%-3);
+    printf("\n REMAINDER = %d", -20%-3);
+
+
+}
+//Program to find odd or even
+
+#include<stdio.h>
+void main()
+{
+    int num;
+    printf("Enter any number : ");
+    scanf("%d", &num);
+    if(num%2==0){
+        printf("\n %d is an even number", num);
+    }
+    else{
+        printf("\n %d is an odd number", num);
+    }
+
+
+}
+#include<stdio.h>
+void main(){
+    int n=4;
+    char c='4';
+    n= n+5;
+    c=c+5;
+    printf("Integer %d", n);
+    printf("\n Character = %d", c);
+
+
+}
+
+
+
+
+
+
+// Program to find sum of Natural no up to N terms
+
+#include<stdio.h>
+void main()
+{
+    int N, i, Sum;
+    i=1, Sum=0;
+    printf("Enter the value of N : ");
+    scanf("%d", &N);
+    for(i;i<=N;i++){
+        Sum = Sum+i;
+
+    }
+    if(N==1){
+        printf("\n Sum of Natural no up to 1st term : %d", Sum);
+    }
+    else if(N==2){
+        printf("\n Sum of Natural no up to 2nd term : %d", Sum);
+    }
+     else if(N==3){
+        printf("\n Sum of Natural no up to 3rd term : %d", Sum);
+    }
+    else{
+    printf("\n Sum of Natural no up to %dth term : %d", N, Sum);
+
+    }
+}
+// Sum of numbers up to N times
+
+#include<stdio.h>
+void main()
+{
+    int num, N, Sum=0, i=1;
+    printf(" Enter any number : ");
+    scanf("%d", &num);
+    printf("\n Enter N : ");
+    scanf("%d", &N);
+    for(i;i<=N;i++){
+        Sum= Sum + num;
+    }
+    printf("\n The sum of %d up to %d times : %d", num, N, Sum);
+
+
+
+}
+// Program to find Factorial of given number
+
+#include<stdio.h>
+void main()
+{
+    int num,Factorial=1, i=1;
+    printf(" Enter any number : ");
+    scanf("%d", &num);
+    for(i;i<=num;i++){
+        Factorial = Factorial*i;
+    }
+    printf("\n The Factorial of %d : %d", num, Factorial);
+}
+#include<stdio.h>
+void main()
+{
+    int a, b,c;
+    printf("Enter the first number : ");
+    scanf("%d", &a);
+    printf("Enter the second number : ");
+    scanf("%d", &b);
+    printf("Enter the third number : ");
+    scanf("%d", &c);
+    if(a>=b && a>=c){
+
+    printf("\n The greatest number is %d", a);
+    }
+    else if(b>=c){
+        printf("\n The greatest number is %d", b);
+    }
+    else {
+        printf("\n The greatest number is %d", c);
+    }
+
+}
+// Program to convert Celsius to Fahrenheit scale
+
+#include<stdio.h>
+void main()
+{
+    float C, F;
+    printf("\n Enter the temperature in Celsius degree : ");
+    scanf("%f", &C);
+    F = (9*C+160)/5;
+    printf("\n The temperature in Fahrenheit degree : %fF", F);
+
+}
+//Program to print all ASCII characters
+
+#include<stdio.h>
+void main()
+{
+    int i=0;
+    for(i;i<=255;i++){
+        printf("\n The character for the ASCII value %d : %c", i, i);
+    }
+
+
+}
+// Program to find ASCII value
+
+#include<stdio.h>
+void main()
+{
+char Character;
+printf("Enter the Character : ");
+scanf("%c", &Character);
+printf("The ASCII value of %c = %d", Character, Character);
+
+}
+
+// Program to determine Capital and Small letter
+
+#include<stdio.h>
+void main()
+{
+    char Letter;
+    printf("\n Enter the Letter : ");
+    scanf("%c", &Letter);
+    if(Letter>= 65 && Letter <=90){
+        printf("\n %c is a Capital Letter", Letter);
+    }
+    if(Letter>=97 && Letter<= 122){
+        printf("\n %c is a Small Letter", Letter);
+    }
+
+}
+// Program to Convert Hexadecimal and Octal to Decimal
+
+#include<stdio.h>
+void main()
+{
+    int D, O, H;
+    D=123;
+    O=0123;
+    H=0X123;
+    printf(" Decimal no = %d", D);
+    printf("\n Octal to Decimal no = %d", O);
+    printf("\n Hexadecimal to Decimal no = %d", H);
+
+}
+// Program to convert Decimal to Hexadecimal and Octal Number
+
+#include<stdio.h>
+void main()
+{
+    int a, b, c;
+    a=10;
+    b=5;
+    c= a+b;
+    printf("\n Decimal no = %d", c);
+    printf("\n Decimal to Octal no = %o", c);
+    printf("\n Decimal to Hexadecimal no = %x", c);
+    printf("\n Decimal to Hexadecimal no = %X", c);
+
+}
+// Exponential form constant
+
+#include<stdio.h>
+void main()
+{
+    float a, b, c, d;
+    a=3.2e4;
+    b=3.2e-4;
+    c=-3.2e4;
+    d=-3.2e-4;
+    printf("\n a = %f", a);
+    printf("\n b = %f", b);
+    printf("\n c = %f", c);
+    printf("\n d = %f", d);
+
+}
+// Program to find power of the number
+
+#include<stdio.h>
+#include<math.h>
+void main()
+{
+    float x, a, result, square;
+    printf("\n Enter any Number : ");
+    scanf("%f", &x);
+    printf("\n Enter the Power : ");
+    scanf("%f", &a);
+    result = pow(x,a);
+    printf("\n %f^%f = %f", x, a, result);
+
+    // square without using function
+    square = x*x;
+    printf("\n The square of %f = %f", x, square);
+}
+// Program to find Square root
+
+#include<stdio.h>
+#include<math.h>
+void main()
+{
+    float x;
+    float sqroot;
+    printf("Enter any number = ");
+    scanf("%f", &x);
+    sqroot=sqrt(x);
+    printf("Square root = %f", sqroot);
+
+}
+// Program to find root of Quadratic equation
+
+#include<stdio.h>
+#include<math.h>
+void main()
+{
+    float a, b, c, D, Root1, Root2;
+    printf("Enter the coeff of X2 = ");
+    scanf("%f", &a);
+    printf("Enter the coeff of X = ");
+    scanf("%f", &b);
+    printf("Enter the coeff of C = ");
+    scanf("%f", &c);
+    D=sqrt((b*b)-(4*a*c));
+    Root1= (-b+D)/(2*a);
+    Root2= (-b-D)/(2*a);
+    printf("\n First Root = %f", Root1);
+    printf("\n Second Root = %f", Root2);
+
+}
+// Program to swap two variable with using third variable
+
+#include<stdio.h>
+void main()
+{
+    int a, b, memory;
+
+    printf("Enter the value of a = ");
+    scanf("%d", &a);
+    printf("Enter the value of b = ");
+    scanf("%d", &b);
+    memory=a;
+    a=b;
+    b=memory;
+    printf("\n \t \t After swapping");
+    printf("\n The value of a = %d \n The value of b = %d", a, b);
+
+
+}
+// Program to swap two variable without using third variable
+
+#include<stdio.h>
+void main()
+{
+    int a, b;
+
+    printf("Enter the value of a = ");
+    scanf("%d", &a);
+    printf("Enter the value of b = ");
+    scanf("%d", &b);
+    a=a+b;
+    b=a-b;
+    a=a-b;
+    printf("\n \t \t After swapping");
+    printf("\n The value of a = %d \n The value of b = %d", a, b);
+
+
+}
+// Program to reverse 3 digits number;
+
+#include<stdio.h>
+void main()
+{
+    int num, r1, r2, r3, sum;
+    printf("Enter any three digit number : ");
+    scanf("%d", &num);
+    r1=num%10;
+    num= num/10;
+    r2=num%10;
+    num=num/10;
+    r3=num%10;
+    printf("\n \t After reversing the digits ");
+    printf("\n\n The number = %d%d%d", r1, r2, r3);
+    sum=r1+r2+r3;
+    printf("\n The sum of three digits = %d", sum);
+}
+// Program to reverse 5 digits number;
+
+#include<stdio.h>
+void main()
+{
+    int num, r1, r2, r3, r4, r5, sum;
+    printf("Enter any five digit number : ");
+    scanf("%d", &num);
+    r1=num%10;
+    num= num/10;
+    r2=num%10;
+    num=num/10;
+    r3=num%10;
+    num=num/10;
+    r4=num%10;
+    num=num/10;
+    r5=num%10;
+    printf("\n \t After reversing the digits ");
+    printf("\n\n The number = %d%d%d%d%d", r1, r2, r3, r4, r5);
+    sum=r1+r2+r3+r4+r5;
+    printf("\n The sum of five digits = %d", sum);
+}
+// Program to convert days into years months weeks and days
+
+#include<stdio.h>
+void main()
+{
+    int Days, Years, Months, Weeks;
+    printf("\n Enter the total no of days : ");
+    scanf("%d", &Days);
+    Years = Days/365;
+    Days = Days%365;
+    Months = Days/30;
+    Days = Days%30;
+    Weeks = Days/7;
+    Days = Days %7;
+    printf("The given days = %d Years, %d Months, %d Weeks, %d Days", Years, Months, Weeks, Days);
+}
+// Escape sequnce
+
+#include<stdio.h>
+void main()
+{
+    printf("\nab");
+    printf("\bsi");
+    printf("\rha");
+}
+// Correct the program and write output
+
+#include<stdio.h>
+void main()
+{
+    float age_of_man = 10.5;
+    printf("The age of man is = %.2f", age_of_man);
+
+}
+// Find Area of Triangle using Base And Height
+
+#include<stdio.h>
+void main()
+{
+    float b, h, A;
+    printf("\n Enter the length of base of Triangle : ");
+    scanf("%f", &b);
+    printf("\n Enter the Perpendicular height of the triangle : ");
+    scanf("%f", &h);
+    A= b*h/2;
+    printf("\n The area of the Triangle : %f", A);
+
+
+}
+
+// Relational operator
+
+#include<stdio.h>
+void main()
+{
+    int a=2, b=3;
+    printf("\n a<b : %d \t a>b : %d", a<b, a>b);
+    printf("\n a<=b : %d \t a>=b : %d", a<=b, a>=b);
+    printf("\n a=b : %d", a==b);
+    printf("\n a!=b : %d", a!=b);
+
+}
+// Logical Operator
+
+#include<stdio.h>
+void main()
+{
+    printf("1. And Operator");
+    int a=2, b=3, c=4;
+    printf("\n\n a<b&&b<c : %d", a<b&&b<c);
+    printf("\n a<b&&b>c : %d", a<b&&b>c);
+    printf("\n a>b&&b<c : %d", a>b&&b<c);
+    printf("\n a>b&&b>c : %d", a>b&&b>c);
+
+    printf("\n\n 2.Or Operator");
+    printf("\n\n a<b||b<c : %d", a<b||b<c);
+    printf("\n a<b||b>c : %d", a<b||b>c);
+    printf("\n a>b||b<c : %d", a>b||b<c);
+    printf("\n a>b||b>c : %d", a>b||b>c);
+
+    printf("\n\n 3. Not Operator");
+    printf("\n !a=a : %d", !a==a);
+    printf("\n !(a>b) : %d ,  !(a<b) : %d", !(a>b), !(a<b));
+
+
+}
+// Arithmetic Expression
+
+#include<stdio.h>
+void main()
+{
+    int a=5, b=1, c=3, d=3, Result;
+    Result= a+b*c/d;
+    printf(" 1. a+b*c/d = %d", Result);
+
+    a=4, b=5, c=7, d=3;
+    Result= (a+b)*b*c/d%3;
+    printf("\n\n 2. (a+b)*b*c/d%3 = %d", Result);
+
+    a=2, b=3, c=4;
+    Result= a+b*c<=b*a>=b*c;
+    printf("\n\n 3. a+b*c<=b*a>=b*c = %d", Result);
+}
+// Division rule
+
+#include<stdio.h>
+void main()
+{
+    int a=8, c=3;
+    float b=8, d=3;
+
+    printf("\n int/int = %d ", a/c);
+    printf("\n int/float = %f ", a/d);
+    printf("\n float/int = %f ", b/c);
+    printf("\n float/float = %f ", b/d);
+}
+// What happens
+
+#include<stdio.h>
+void main()
+{
+    unsigned char a= 'A';
+    a= a+255;
+    printf("\n %c %d", a, a);
+
+    printf("\n\n Character with ASCII value %d is %c", 241, 241);
+}
